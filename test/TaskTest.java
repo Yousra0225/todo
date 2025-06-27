@@ -1,3 +1,5 @@
+import todo.Task;
+
 public class TaskTest {
     public static void main(String[] args) {
         Task task = new Task("Test unitaire");
