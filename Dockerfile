@@ -5,5 +5,5 @@ COPY test ./test
 RUN mkdir classes
 RUN javac src/todo/*.java -d classes
 RUN javac -cp classes test/*.java -d classes
-CMD ["java", "-cp", "classes", "todo.TaskTest"]
+CMD ["java", "-cp", "classes", "TaskTest"]
 EXPOSE 8080
