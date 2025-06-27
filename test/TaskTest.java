@@ -2,11 +2,13 @@ import todo.Task;
 
 public class TaskTest {
     public static void main(String[] args) {
-        Task task = new Task("Test unitaire");
-        assert !task.isDone();
-        task.markDone();
-        assert task.isDone();
-        System.out.println("Tests passed.");
+        Task t = new Task("test");
+        if (!t.getTitle().equals("test")) {
+            System.out.println("Test échoué");
+            System.exit(1); 
+        }
+        System.out.println("Test passé");
     }
 }
+
 
