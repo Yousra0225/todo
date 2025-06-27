@@ -1,0 +1,21 @@
+name: Java Docker CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v3
+
+      - name: Construction de l'image Docker
+        run: docker build -t java-todo-test1
+
+      - name:  Exécuter le conteneur
+        run: docker run java-todo-test1
