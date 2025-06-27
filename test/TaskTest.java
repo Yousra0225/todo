@@ -3,7 +3,7 @@ import todo.Task;
 public class TaskTest {
     public static void main(String[] args) {
         Task t = new Task("test");
-        if (!t.getTitle().equals("test")) {
+        if (!t.getTitle().equals("tzest")) {
             System.out.println("Test échoué");
             System.exit(1); 
         }
