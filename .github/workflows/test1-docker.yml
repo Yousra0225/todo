@@ -19,3 +19,8 @@ jobs:
 
       - name:  Exécuter le conteneur
         run: docker run java-todo-test1
+
+      - name: Exécuter les tests
+      - run: |
+          docker run java-todo-test1 java -cp classes todo.TaskTest
+        
